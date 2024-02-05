@@ -1,0 +1,20 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip8_14">
+			<rect id="Развернуть меню" width="40.000000" height="40.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip8_14)">
+		<path id="path" d="M6.68677 9.89661L6.66675 9.91663C6.24683 9.91663 5.91675 9.58661 5.91675 9.16663C5.91675 8.74664 6.24683 8.41663 6.66675 8.41663L6.68677 8.43665L6.68677 9.89661ZM33.3135 8.43665L33.3335 8.41663C33.7534 8.41663 34.0835 8.74664 34.0835 9.16663C34.0835 9.58661 33.7534 9.91663 33.3335 9.91663L33.3135 9.89661L33.3135 8.43665Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M6.66675 9.16663L33.3335 9.16663" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M6.68677 20.73L6.66675 20.75C6.24683 20.75 5.91675 20.42 5.91675 20C5.91675 19.58 6.24683 19.25 6.66675 19.25L6.68677 19.27L6.68677 20.73ZM34.98 19.27L35 19.25C35.4199 19.25 35.75 19.58 35.75 20C35.75 20.42 35.4199 20.75 35 20.75L34.98 20.73L34.98 19.27Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M6.66675 20L35 20" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M6.68677 31.5634L6.66675 31.5834C6.24683 31.5834 5.91675 31.2534 5.91675 30.8334C5.91675 30.4134 6.24683 30.0834 6.66675 30.0834L6.68677 30.1034L6.68677 31.5634ZM33.3135 30.1034L33.3335 30.0834C33.7534 30.0834 34.0835 30.4134 34.0835 30.8334C34.0835 31.2534 33.7534 31.5834 33.3335 31.5834L33.3135 31.5634L33.3135 30.1034Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M6.66675 30.8334L33.3335 30.8334" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="path" d="M30.8164 25.2161L30.8164 25.2443C30.5195 25.5413 30.0527 25.5413 29.7559 25.2443C29.4587 24.9473 29.4587 24.4807 29.7559 24.1837L29.7842 24.1837L30.8164 25.2161ZM29.7842 15.8162L29.7559 15.8162C29.4587 15.5192 29.4587 15.0525 29.7559 14.7555C30.0527 14.4585 30.5195 14.4585 30.8164 14.7555L30.8164 14.7838L29.7842 15.8162Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M30.2861 24.714L35.0002 19.9999L30.2861 15.2858" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

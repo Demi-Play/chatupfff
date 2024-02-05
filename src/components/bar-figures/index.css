@@ -1,0 +1,64 @@
+.left-bar-header-wrapp {
+    display: flex;
+    padding-bottom: 36px;
+}
+
+.left-bar-header-wrapp-search {
+    /* Прямоугольник 2 */
+    /* position: absolute; */
+    width: 388px;
+    height: 64px;
+    left: 126px;
+    top: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(156, 39, 176);
+    border-radius: 20px;
+    font-size: medium;
+    background: rgb(51, 51, 51);
+}
+
+.left-bar-header-wrapp-menu {
+    /* Прямоугольник 2 */
+    /* position: absolute; */
+    width: 64px;
+    height: 64px;
+    margin-right: 36px;
+    top: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(156, 39, 176);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51);
+}
+
+.left-bar-header-wrapp-search-img {
+    width: 64px;
+    height: 64px;
+    margin-left: 36px;
+    top: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(156, 39, 176);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51);
+}
+
+.left-bar-header-wrapp-search-img-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.chats-bar-wrapp {
+    padding: 36px;
+    width: 644px;
+    height: 902px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 123, 255);
+    border-radius: 20px;
+
+    background: rgb(51, 51, 51);
+}
