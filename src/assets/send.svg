@@ -1,0 +1,16 @@
+<svg width="40.000000" height="40.000000" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip8_11">
+			<rect id="Отправить" width="40.000000" height="40.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip8_11)">
+		<path id="path" d="M35.833 4.16675L24.75 35.8334L18.4165 21.5834L4.1665 15.2501L35.833 4.16675Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M24.75 35.8334L18.4165 21.5834L4.1665 15.2501L35.833 4.16675L24.75 35.8334Z" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+		<path id="path" d="M18.9468 22.0853L18.9468 22.1135C18.6499 22.4105 18.1831 22.4105 17.8862 22.1135C17.5894 21.8167 17.5894 21.3499 17.8862 21.053L17.9146 21.053L18.9468 22.0853ZM35.3027 3.66455L35.3027 3.63635C35.5996 3.33936 36.0664 3.33936 36.3633 3.63635C36.6602 3.93323 36.6602 4.40002 36.3633 4.6969L36.335 4.6969L35.3027 3.66455Z" fill="#000000" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="path" d="M18.4165 21.5833L35.833 4.16663" stroke="#9C27B0" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+	</g>
+</svg>

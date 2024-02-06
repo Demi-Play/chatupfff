@@ -2,14 +2,14 @@
     /* Прямоугольник 2 */
     /* position: absolute; */
     width: 518px;
-    height: 66px;
+    /* height: 66px; */
     margin-left: 0;
     margin-top: 0;
     box-sizing: border-box;
     border: 1px solid rgb(0, 123, 255);
     border-radius: 20px;
     background: rgb(51, 51, 51);
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
     display: flex;
 }
 
@@ -23,7 +23,9 @@
     box-sizing: border-box;
     border: 1px solid rgb(0, 123, 255);
     border-radius: 18px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(51, 51, 51);
 }
 
