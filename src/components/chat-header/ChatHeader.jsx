@@ -1,3 +1,4 @@
+import React from 'react'; 
 import './index.css'
 import documentImage from '../../assets/document-img.svg'
 import callIcon from '../../assets/call.svg'

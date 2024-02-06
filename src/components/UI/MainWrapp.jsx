@@ -1,3 +1,4 @@
+import React from 'react';
 import "./index.css";
 import ChatsBar from "../bar-figures/ChatsBar";
 import ChatMessages from "../chat-messages/ChatMessages";

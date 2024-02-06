@@ -1,0 +1,44 @@
+.preference-wrapp {
+    /* Preference */
+/* position: relative; */
+width: 546px;
+height: 772px;
+display: flex;
+justify-content: center;
+}
+
+.preference-wrapp-head {
+    /* Preference */
+/* position: absolute; */
+width: 508px;
+height: 64px;
+left: 20px;
+right: 18px;
+top: 36px;
+bottom: 672px;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 48px;
+font-weight: 400;
+line-height: 58px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+
+.preference-wrapp-button {
+    /* Прямоугольник 2 */
+/* position: absolute; */
+width: 508px;
+height: 64px;
+left: 20px;
+top: 136px;
+box-sizing: border-box;
+border: 2px solid rgb(0, 123, 255);
+border-radius: 20px;
+
+background: rgb(51, 51, 51);
+}

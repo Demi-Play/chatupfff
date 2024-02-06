@@ -1,3 +1,5 @@
+
+import React from 'react'; 
 import './index.css'
 import documentImg from '../../assets/document-img.svg'
 
