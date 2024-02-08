@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css'
 import MainWrapp from './components/UI/MainWrapp'
-import Auth from './components/auth-provider/Auth';
+import AuthProvider from './components/auth-provider/AuthProvider';
 
 function App() {
 
   return (
     <>
       {/* <MainWrapp /> */}
-      <Auth />
+      <AuthProvider />
     </>
   )
 }

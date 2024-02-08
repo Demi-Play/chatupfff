@@ -3,10 +3,10 @@ import sendIcon from '../../assets/send.svg'
 
 const UserInput = () => {
     return (
-        <div>
-            <textarea type="text" name="message" id="message" />
+        <>
+            <textarea type="text" name="message" id="message" placeholder='Hey, how are you?' />
             <button className='send-message'><img src={sendIcon} alt="" /></button>
-        </div>
+        </>
     );
 }
 

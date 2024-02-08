@@ -5,18 +5,14 @@ import './index.css'
 const Reg = () => {
     let sign = false
     return (
-        <div className='auth-wrapp'>
-            <div className='auth-wrapp'>
-                <div className='auth-header'>
-                    <img className='auth-header-logo' src={Logo} alt="" />
-                    <button className='auth-header-sign-change'>{sign ? 'Sign in' : 'Sign up'}</button>
-                </div>
-                <div className='auth-wrapp-form'>
-                    <h2 className='auth-wrapp-form-head'>
-                        Авторизация
-                    </h2>
-                </div>
-            </div>
+        <div className='auth-wrapp-form'>
+            <h2 className='auth-wrapp-form-head'>
+                Авторизация
+            </h2>
+            <input className='auth-inp' type="text" name="name" id="name" />
+            {/* <input className='auth-inp' type="email" name="email" id="email" /> */}
+            <input className='auth-inp' type="password" name="password" id="password" />
+            <button className='auth-btn' >Войти</button>
         </div>
     );
 }
