@@ -6,6 +6,8 @@ const SignIn = (props) => {
     const handleClick = () => {
         props.onStateChange(!props.auth);
     };
+
+    
     
     return (
         <div className='auth-header'>

@@ -50,46 +50,57 @@
     float: right;
     margin-right: 24px;
 }
+.reerrs {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
 
 #message {
     /* Прямоугольник 2 */
-    position: fixed;
+    position: relative;
     width: 518px;
     height: 93px;
-    right: 333px;
+    /* right: 333px; */
     /* top: 716px; */
     bottom: 0;
     box-sizing: border-box;
-    border: 2px solid rgb(156, 39, 176);
+    /* border: 0px solid rgb(156, 39, 176); */
+    resize: none;
     border-radius: 20px 20px 0px 0px;
     font-size: 24px;
     text-align: justify;
-    background: rgb(51, 51, 51);
+    background: none;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+#message:hover, input:scope {
+    border: 1px solid #007BFF;
 }
 
 .send-message {
     /* Прямоугольник 2 */
-    position: fixed;
+    position: relative;
     width: 64px;
     height: 93px;
-    right: 233px;
+    /* right: 233px; */
     /* left: 787px; */
     /* top: 716px; */
     margin-left: 36px;
     /* top: 0; */
-    bottom: 0;
+    /* bottom: 0; */
     box-sizing: border-box;
-    border: 2px solid rgb(156, 39, 176);
+    /* border: 2px solid rgb(156, 39, 176); */
     border-radius: 20px 20px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(51, 51, 51);
+    background: none;
 }
+
 
 .message-chat-scroll {
     height: 700px;
     overflow-y: scroll;
+    scrollbar-color: #007BFF;
 }
-
-

@@ -48,7 +48,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover, input:active, textarea:active {
   border-color: #007BFF;
 }
 button:focus,
@@ -56,13 +56,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #ffffff;
     background-color: #1a1a1a;
   }
   a:hover {
-    color: #b9bac7;
+    color: #007BFF;
   }
   button {
     background-color: #1a1a1a;

@@ -45,7 +45,7 @@
     height: 64px;
     left: 1577px;
     top: 106px;
-    border: 2px solid rgb(156, 39, 176);
+    border: 2px solid #007BFF;
     border-radius: 20px;
     background: rgb(0, 0, 0);
 }
@@ -119,7 +119,7 @@ bottom: 740px; */
     left: 701px;
     top: 376px;
     box-sizing: border-box;
-    border: 1px solid rgb(156, 39, 176);
+    border: 1px solid #007BFF;
     border-radius: 20px;
     margin-top: 36px;
     background: rgb(0, 0, 0);

@@ -13,10 +13,9 @@
     left: 0;
     top: 0;
     box-sizing: border-box;
-    border: 1px solid rgb(156, 39, 176);
+    /* border: 1px solid rgb(156, 39, 176); */
     border-radius: 20px;
     /* background: rgb(93, 25, 105); */
-    /* background: rgb(51, 51, 51); */
 }
 
 .chat-header-main-wrapp-img {
@@ -70,17 +69,24 @@
     margin-left: 36px;
     top: 0;
     box-sizing: border-box;
-    border: 1px solid rgb(156, 39, 176);
+    /* border: 1px solid rgb(156, 39, 176); */
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 0, 0);
+    background: none;
+    /* background: rgb(0, 123, 255); */
+
 }
 
-.chat-header-main-wrapp-back:hover, .chat-header-main-wrapp-call:hover {
+/* .chat-header-call-icon:hover {
     background: #333;
-}
+} */
+
+
+/* .chat-header-main-wrapp-back:hover, .chat-header-main-wrapp-call:hover {
+    background: #333;
+} */
 
 .chat-header-main-wrapp-img-document {
     width: 40px;

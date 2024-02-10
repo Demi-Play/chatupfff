@@ -3,8 +3,12 @@ import Logo from '../../assets/logo.svg'
 import './index.css'
 import SignIn from './SignIn';
 
-const Auth = () => {
+const Auth = (props) => {
+    const sign = true
 
+    const handleSignIn = () => {
+        props.onClick(sign)
+    }
     return (
         <div className='auth-wrapp-form'>
             <h2 className='auth-wrapp-form-head'>
@@ -13,7 +17,7 @@ const Auth = () => {
             <input className='auth-inp' type="text" name="name" id="name" />
             <input className='auth-inp' type="email" name="email" id="email" />
             <input className='auth-inp' type="password" name="password" id="password" />
-            <button className='auth-btn' >Зарегистрироваться</button>
+            <button onClick={handleSignIn} className='auth-btn' >Зарегистрироваться</button>
         </div>
     );
 }

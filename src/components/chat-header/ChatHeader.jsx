@@ -4,7 +4,13 @@ import documentImage from '../../assets/document-img.svg'
 import callIcon from '../../assets/call.svg'
 import backArrow from '../../assets/back-arrow.svg'
 
-const ChatHeader = () => {
+const ChatHeader = (props) => {
+    const sign = false
+
+    const handleOut = () => {
+        props.onClick(sign)
+    }
+
     return (
         <div className='chat-header-main'>
             <div className="chat-header-main-wrapp">
@@ -15,8 +21,8 @@ const ChatHeader = () => {
                 </div>
 
             </div>
-            <button className='chat-header-main-wrapp-call'><img src={callIcon} alt="" /></button>
-            <button className='chat-header-main-wrapp-back'><img src={backArrow} alt="" /></button>
+            <button className='chat-header-main-wrapp-call'><img className='chat-header-call-icon' src={callIcon} alt="" /></button>
+            <button onClick={handleOut} className='chat-header-main-wrapp-back'><img className='chat-header-call-icon' src={backArrow} alt="" /></button>
         </div>
     );
 }
