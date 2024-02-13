@@ -55,6 +55,12 @@
     justify-content: center;
     margin-top: 8px;
 }
+.message-time {
+    position: relative;
+    min-height: 64px;
+    display: flex;
+    align-items: baseline;
+}
 
 #message {
     /* Прямоугольник 2 */

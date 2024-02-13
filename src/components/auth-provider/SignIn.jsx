@@ -7,12 +7,10 @@ const SignIn = (props) => {
         props.onStateChange(!props.auth);
     };
 
-    
-    
     return (
         <div className='auth-header'>
             <img className='auth-header-logo' src={Logo} alt="" />
-            <button onClick={handleClick} className='auth-header-sign-change'>{props.sign ? 'Sign un' : 'Sign in'}</button>
+            <button onClick={handleClick} className='auth-header-sign-change'>{props.auth ? 'Sign up' : 'Sign in'}</button>
         </div>
     );
 }

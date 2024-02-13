@@ -7,7 +7,7 @@ const Msg = (props) => {
     return (
         <div className='msg-wrapp'>
         <div className={'message-text ' + props.className}>{props.text} <br />
-        <p >{props.time}</p></div>
+        <p className='message-time' >{props.time}</p></div>
         </div>
     );
 }

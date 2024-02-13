@@ -3,6 +3,7 @@ import Logo from '../../assets/logo.svg'
 import './index.css'
 import SignIn from './SignIn';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 const Auth = (props) => {
     const sign = false
@@ -25,7 +26,7 @@ const Auth = (props) => {
             const handleSignIn = (sign) => {
                 props.onClick(sign)
                 // fetch('http://127.0.0.1:5000/reg')
-                
+                Cookies.set('is_auth', true)
                 console.log(response.data)
             }
             if (response.status == 200) {
