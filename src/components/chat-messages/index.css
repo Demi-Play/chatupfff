@@ -60,6 +60,7 @@
     min-height: 64px;
     display: flex;
     align-items: baseline;
+    font-size: xx-small;
 }
 
 #message {

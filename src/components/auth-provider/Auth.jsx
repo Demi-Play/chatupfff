@@ -27,19 +27,19 @@ const Auth = (props) => {
                 props.onClick(sign)
                 // fetch('http://127.0.0.1:5000/reg')
                 Cookies.set('is_auth', true)
-                console.log(response.data)
+                console.log(response.data.id)
             }
-            if (response.status == 200) {
-            handleSignIn(!sign)
-            console.log(response.data);
+            if (response.status == 200 && response.data.id) {
+                handleSignIn(!sign)
+                console.log(response.data);
             } else {
-            handleSignIn(sign)
-                
+                handleSignIn(sign)
+
             }
 
-            
+
             // Обработка ответа от сервера
-            
+
         } catch (error) {
             console.error(error);
             props.onClick(sign)
@@ -52,9 +52,9 @@ const Auth = (props) => {
             <h2 className='auth-wrapp-form-head'>
                 Авторизация
             </h2>
-            <input onChange={(e) => {setName(e.target.value)}} className='auth-inp' type="text" name="name" id="name" placeholder='name' />
+            <input onChange={(e) => { setName(e.target.value) }} className='auth-inp' type="text" name="name" id="name" placeholder='name' />
             {/* <input className='auth-inp' type="email" name="email" id="email" /> */}
-            <input onChange={(e) => {setPassword(e.target.value)}} className='auth-inp' type="password" name="password" id="password" placeholder='password' />
+            <input onChange={(e) => { setPassword(e.target.value) }} className='auth-inp' type="password" name="password" id="password" placeholder='password' />
             <button onClick={handleSubmit} className='auth-btn' >Войти</button>
         </div>
 

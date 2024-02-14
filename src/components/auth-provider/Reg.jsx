@@ -6,7 +6,7 @@ import axios from 'axios';
 const Reg = (props) => {
     const sign = true
 
-    
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -25,9 +25,9 @@ const Reg = (props) => {
             // Дополнительная обработка ответа сервера
             const handleSignIn = () => {
                 props.onClick(sign)
-                // fetch('http://127.0.0.1:5000/reg')
+                    // fetch('http://127.0.0.1:5000/reg')
                     .then((data) => {
-        
+
                     })
             }
             handleSignIn()
