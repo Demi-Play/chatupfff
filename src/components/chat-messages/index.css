@@ -11,6 +11,19 @@
     background: rgb(0, 0, 0);
 }
 
+.msg-wrapp {
+    /* display: flex; */
+    /* width: 1060px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-menu {
+    position: relative;
+    display: flex;
+}
+
 .message-text {
     /* Прямоугольник 2 */
     /* position: absolute; */
@@ -34,6 +47,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .message-text:hover {
     background: rgb(51, 51, 51);
     /* border: 1px solid rgb(0, 123, 255); */
@@ -44,20 +58,23 @@
     float: left;
     margin-left: 24px;
 }
+
 .user-to {
     /* position: absolute; */
     /* display: block; */
     float: right;
     margin-right: 24px;
 }
+
 .reerrs {
     display: flex;
     justify-content: center;
     margin-top: 8px;
 }
+
 .message-time {
     position: relative;
-    min-height: 64px;
+    min-height: 32px;
     display: flex;
     align-items: baseline;
     font-size: xx-small;
@@ -81,7 +98,8 @@
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
 
-#message:hover, input:scope {
+#message:hover,
+input:scope {
     border: 1px solid #007BFF;
 }
 

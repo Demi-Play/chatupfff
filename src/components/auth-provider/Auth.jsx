@@ -27,6 +27,7 @@ const Auth = (props) => {
                 props.onClick(sign)
                 // fetch('http://127.0.0.1:5000/reg')
                 Cookies.set('is_auth', true)
+                Cookies.set('user_id', response.data.id)
                 console.log(response.data.id)
             }
             if (response.status == 200 && response.data.id) {

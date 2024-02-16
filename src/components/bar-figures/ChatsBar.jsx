@@ -3,6 +3,7 @@ import LeftBarHeader from "./LeftBarHeader";
 import ChatNav from "../chat-nav/ChatNav";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
+import Cookies from "js-cookie";
 
 const ChatsBar = () => {
   const [usersData, setUsersData] = useState(null);
@@ -42,7 +43,10 @@ const ChatsBar = () => {
       <div className="chats-bar-wrapp-scroll">
         {usersData ? (
           usersData.map((user) => (
-            <ChatNav key={user.id} id={user.id} name={user.name} onClick={() => handleUserClick(user.id)} />
+            (Cookies.get('user_id') != user.id) ?
+              <ChatNav key={user.id} id={user.id} name={user.name} onClick={() => handleUserClick(user.id)} />
+              :
+              null
           ))
         ) : (
           <p>Loading users...</p>

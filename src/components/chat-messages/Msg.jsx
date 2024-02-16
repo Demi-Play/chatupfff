@@ -1,33 +1,87 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'
+import Cookies from 'js-cookie';
 
 const Msg = (props) => {
     const [className, setClassName] = useState('user_from')
+    const [editing, setEditing] = useState(false);
+    const [text, setText] = useState(props.text);
+    const [showMenu, setShowMenu] = useState(false);
 
     useEffect(() => {
-        if (props.to === 1 && props.from === 2) {
-            setClassName('user-from')
-        } else {
+        if (props.to == Cookies.get('user_id')) {
             setClassName('user-to')
+        } else {
+            setClassName('user-from')
         }
     }, [props.to, props.from])
 
     const handleUpdate = () => {
-        // Обработчик обновления
+        // Отправьте запрос на сервер для обновления сообщения
+        fetch(`http://127.0.0.1:5000/editmsg/${Number(props.id)}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+
+            },
+            body: JSON.stringify({ text })
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Обновите состояние сообщения
+                setText(data.text);
+                setEditing(false);
+            })
+            .catch(error => {
+                console.error('Ошибка при обновлении сообщения:', error);
+            });
+        setShowMenu(false);
     }
 
     const handleDelete = () => {
-        // Обработчик удаления
+        // Отправьте запрос на сервер для удаления сообщения
+        fetch(`http://127.0.0.1:5000/delmsg/${Number(props.id)}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .catch(error => {
+                console.error('Ошибка при удалении сообщения:', error);
+            });
+        setShowMenu(false);
     }
 
     return (
-        <div className='msg-wrapp'>
-            <div className={'message-text ' + className}>
-                {props.text} <br />
-                <p className='message-time'>{props.time}</p>
+        <div className={'msg-wrapp ' + className}>
+            <div className={'message-text ' + className} onClick={() => setShowMenu(!showMenu)}>
+                {editing ? (
+                    <input
+                        type="text"
+                        value={text}
+                        onChange={e => setText(e.target.value)}
+                    />
+                ) : (
+                    <>
+                        {text} <br />
+                        <p className='message-time'>{props.time}</p>
+                    </>
+                )}
             </div>
-            {/* <button onClick={handleUpdate}>Обновить</button>
-            <button onClick={handleDelete}>Удалить</button> */}
+            {showMenu ? (
+                editing ? (
+                    <div className='edit-menu'>
+                        <button className='message-time' onClick={handleUpdate}>Сохранить</button>
+                        <button className='message-time' onClick={() => { setEditing(false); setShowMenu(false); }}>Отмена</button>
+                    </div>
+                ) : (
+                    <div className='edit-menu'>
+                        <button className='message-time' onClick={() => setEditing(true)}>Редактировать</button>
+                        <button className='message-time' onClick={handleDelete}>Удалить</button>
+                    </div>
+                )
+            ) : (null)}
+
         </div>
     );
 }

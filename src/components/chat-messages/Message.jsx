@@ -12,7 +12,7 @@ const Message = (props) => {
         .then(response => response.json())
         .then(data => setMessages(data))
         .catch(error => console.error(error));
-    }, 5000); // Обновление каждые 5 секунд
+    }, 500); // Обновление каждые 5 секунд
 
     return () => clearInterval(interval); // Очистка интервала при размонтировании компонента
   }, []);
@@ -23,6 +23,7 @@ const Message = (props) => {
       <div className="message-chat-scroll">
         {messages.map(message => (
           <Msg key={message.id}
+            id={message.id}
             text={message.text}
             from={message.user_from}
             to={message.user_to}

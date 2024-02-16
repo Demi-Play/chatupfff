@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import sendIcon from '../../assets/send.svg'
+import Cookies from 'js-cookie';
 
 const UserInput = () => {
 
 
-    const [userFrom, setUserFrom] = useState(1);
-    const [userTo, setUserTo] = useState(2);
+    const [userFrom, setUserFrom] = useState(Cookies.get('user_id'));
+    const [userTo, setUserTo] = useState(Cookies.get('selected_user'));
     const [text, setText] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setUserTo(Cookies.get('selected_user'))
         const message = {
             user_from: userFrom,
             user_to: userTo,
@@ -28,6 +29,7 @@ const UserInput = () => {
 
             if (response.ok) {
                 console.log('Message sent successfully');
+                setText('')
             } else {
                 console.error('Failed to send message');
             }
@@ -38,7 +40,7 @@ const UserInput = () => {
 
     return (
         <div className='reerrs'>
-            <textarea onChange={(e) => setText(e.target.value)} type="text" className='message' name="message" id="message" placeholder='Hey, how are you?' />
+            <textarea value={text} onChange={(e) => setText(e.target.value)} type="text" className='message' name="message" id="message" placeholder='Hey, how are you?' />
             <button onClick={handleSubmit} className='send-message'>
                 <img src={sendIcon} alt="" />
             </button>

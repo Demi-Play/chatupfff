@@ -1,11 +1,14 @@
 
-import React from 'react'; 
+import React from 'react';
 import './index.css'
 import documentImg from '../../assets/document-img.svg'
+import Cookies from 'js-cookie';
 
 const ChatNav = (props) => {
     const selectUser = () => {
         props.onClick(props.id)
+        Cookies.remove('selected_user')
+        Cookies.set('selected_user', props.id)
     }
     return (
         <button onClick={selectUser} className="chat-nav-main-wrapp">
