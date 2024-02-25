@@ -5,7 +5,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import Cookies from "js-cookie";
 
-const ChatsBar = () => {
+const ChatsBar = (props) => {
   const [usersData, setUsersData] = useState(null);
 
   const dispatch = useDispatch();
@@ -17,6 +17,7 @@ const ChatsBar = () => {
   const handleUserClick = (userId) => {
     dispatch({ type: 'SELECT_ACTIVE_USER', payload: userId });
     console.log(activeUser)
+    props.selectedChat(userId)
   };
   useEffect(() => {
     const fetchUsers = async () => {

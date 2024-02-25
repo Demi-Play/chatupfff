@@ -54,14 +54,15 @@
 
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0px;
     text-align: center;
 }
 
-.chat-header-main-wrapp-call, .chat-header-main-wrapp-back {
+.chat-header-main-wrapp-call,
+.chat-header-main-wrapp-back {
     /* Прямоугольник 2 */
     /* position: absolute; */
     width: 64px;
@@ -79,16 +80,15 @@
 
 }
 
-/* .chat-header-call-icon:hover {
-    background: #333;
-} */
 
 
 /* .chat-header-main-wrapp-back:hover, .chat-header-main-wrapp-call:hover {
     background: #333;
 } */
 
+
 .chat-header-main-wrapp-img-document {
     width: 40px;
     height: 40px;
+
 }

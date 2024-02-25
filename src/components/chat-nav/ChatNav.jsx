@@ -11,7 +11,7 @@ const ChatNav = (props) => {
         Cookies.set('selected_user', props.id)
     }
     return (
-        <button onClick={selectUser} className="chat-nav-main-wrapp">
+        <button onClick={selectUser} className={"chat-nav-main-wrapp"}>
             <div className='chat-nav-main-wrapp-img'><img src={documentImg} alt="" /></div>
             <div>
                 <div className='chat-nav-main-wrapp-name'>{props.name}</div>

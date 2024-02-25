@@ -21,7 +21,7 @@ const Message = (props) => {
   return (
     <>
       <div className="message-chat-scroll">
-        {messages.map(message => (
+        {Array.isArray(messages) && messages.map(message => (
           <Msg key={message.id}
             id={message.id}
             text={message.text}

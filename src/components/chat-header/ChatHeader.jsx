@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import './index.css'
 import documentImage from '../../assets/document-img.svg'
 import callIcon from '../../assets/call.svg'
@@ -21,8 +21,8 @@ const ChatHeader = (props) => {
                 </div>
 
             </div>
-            <button className='chat-header-main-wrapp-call'><img className='chat-header-call-icon' src={callIcon} alt="" /></button>
-            <button onClick={handleOut} className='chat-header-main-wrapp-back'><img className='chat-header-call-icon' src={backArrow} alt="" /></button>
+            <button title='' className='chat-header-main-wrapp-call'><img className='chat-header-call-icon' src={callIcon} alt="" /></button>
+            <button title='' onClick={handleOut} className='chat-header-main-wrapp-back'><img className='chat-header-call-icon' src={backArrow} alt="" /></button>
         </div>
     );
 }

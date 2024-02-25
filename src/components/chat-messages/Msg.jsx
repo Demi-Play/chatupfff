@@ -7,6 +7,18 @@ const Msg = (props) => {
     const [editing, setEditing] = useState(false);
     const [text, setText] = useState(props.text);
     const [showMenu, setShowMenu] = useState(false);
+    const [time, setTime] = useState(props.time)
+
+    const convertDate = (dateString) => {
+        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const date = new Date(dateString);
+
+        const dayOfWeek = days[date.getDay()];
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+
+        setTime(`${dayOfWeek}, ${hours}:${minutes}`)
+    };
 
     useEffect(() => {
         if (props.to == Cookies.get('user_id')) {
@@ -14,6 +26,7 @@ const Msg = (props) => {
         } else {
             setClassName('user-from')
         }
+        convertDate(time)
     }, [props.to, props.from])
 
     const handleUpdate = () => {
@@ -64,7 +77,7 @@ const Msg = (props) => {
                 ) : (
                     <>
                         {text} <br />
-                        <p className='message-time'>{props.time}</p>
+                        <p className='message-time'>{time}</p>
                     </>
                 )}
             </div>
