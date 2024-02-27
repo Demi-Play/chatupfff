@@ -8,7 +8,9 @@ const ChatNav = (props) => {
     const selectUser = () => {
         props.onClick(props.id)
         Cookies.remove('selected_user')
+        Cookies.remove('selected_user_name')
         Cookies.set('selected_user', props.id)
+        Cookies.set('selected_user_name', props.name)
     }
     return (
         <button onClick={selectUser} className={"chat-nav-main-wrapp"}>

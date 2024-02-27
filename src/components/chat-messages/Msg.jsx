@@ -20,13 +20,20 @@ const Msg = (props) => {
         setTime(`${dayOfWeek}, ${hours}:${minutes}`)
     };
 
+
+
     useEffect(() => {
-        if (props.to == Cookies.get('user_id')) {
-            setClassName('user-to')
-        } else {
+        if (Number(props.to) == Number(Cookies.get('user_id')) && Number(props.from) == Number(Cookies.get('selected_user'))) {
             setClassName('user-from')
+            convertDate(time)
+        } else if ((Number(props.from) == Number(Cookies.get('user_id')) && Number(props.to) == Number(Cookies.get('selected_user')))) {
+            setClassName('user-to')
+            convertDate(time)
+        } else {
+            setClassName(null)
+
         }
-        convertDate(time)
+
     }, [props.to, props.from])
 
     const handleUpdate = () => {
@@ -66,36 +73,40 @@ const Msg = (props) => {
     }
 
     return (
-        <div className={'msg-wrapp ' + className}>
-            <div className={'message-text ' + className} onClick={() => setShowMenu(!showMenu)}>
-                {editing ? (
-                    <input
-                        type="text"
-                        value={text}
-                        onChange={e => setText(e.target.value)}
-                    />
-                ) : (
-                    <>
-                        {text} <br />
-                        <p className='message-time'>{time}</p>
-                    </>
-                )}
-            </div>
-            {showMenu ? (
-                editing ? (
-                    <div className='edit-menu'>
-                        <button className='message-time' onClick={handleUpdate}>Сохранить</button>
-                        <button className='message-time' onClick={() => { setEditing(false); setShowMenu(false); }}>Отмена</button>
+        <>
+            {className != null ?
+                <div className={'msg-wrapp ' + className}>
+                    <div className={'message-text ' + className} onClick={() => setShowMenu(!showMenu)}>
+                        {editing ? (
+                            <input
+                                type="text"
+                                value={text}
+                                onChange={e => setText(e.target.value)}
+                            />
+                        ) : (
+                            <>
+                                {text} <br />
+                                <p className='message-time'>{time}</p>
+                            </>
+                        )}
                     </div>
-                ) : (
-                    <div className='edit-menu'>
-                        <button className='message-time' onClick={() => setEditing(true)}>Редактировать</button>
-                        <button className='message-time' onClick={handleDelete}>Удалить</button>
-                    </div>
-                )
-            ) : (null)}
+                    {showMenu ? (
+                        editing ? (
+                            <div className='edit-menu'>
+                                <button className='message-time' onClick={handleUpdate}>Сохранить</button>
+                                <button className='message-time' onClick={() => { setEditing(false); setShowMenu(false); }}>Отмена</button>
+                            </div>
+                        ) : (
+                            <div className='edit-menu'>
+                                <button className='message-time' onClick={() => setEditing(true)}>Редактировать</button>
+                                <button className='message-time' onClick={handleDelete}>Удалить</button>
+                            </div>
+                        )
+                    ) : (null)}
 
-        </div>
+                </div>
+                : null}
+        </>
     );
 }
 
