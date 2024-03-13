@@ -7,14 +7,16 @@
     margin-top: 0;
     box-sizing: border-box;
     /* border: 1px solid rgb(0, 123, 255); */
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 0;
     background: rgb(0, 0, 0);
     /* margin-bottom: 36px; */
     display: flex;
 }
 
 .chat-nav-main-wrapp:hover {
-    background-color: #333333;
+    /* background-color: #333333; */
+    background: #acbcc4;
+
 }
 
 .chat-nav-main-wrapp-img {

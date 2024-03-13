@@ -1,6 +1,6 @@
 .auth-main-wrapp {
     margin-top: 74px;
-    background: #000;
+    background: #a1b0b8;
     /* Прямоугольник 2 */
     /* position: absolute; */
     width: 1764px;
@@ -9,7 +9,7 @@
     top: 74px;
     padding: 36px;
     box-sizing: border-box;
-    border: 2px solid rgb(0, 123, 255);
+    border: 2px solid #67C6E3;
     border-radius: 25px;
 
     /* background: rgb(51, 51, 51); */
@@ -45,13 +45,15 @@
     height: 64px;
     left: 1577px;
     top: 106px;
-    border: 2px solid #007BFF;
+    border: 2px solid #67C6E3;
     border-radius: 20px;
     background: rgb(0, 0, 0);
 }
 
 .auth-header-sign-change:hover {
-    background: #333;
+    /* background: #333; */
+    background: #acbcc4;
+
 }
 
 .auth-wrapp-form {
@@ -94,10 +96,10 @@ bottom: 740px; */
     left: 701px;
     top: 376px;
     box-sizing: border-box;
-    border: 1px solid rgb(0, 123, 255);
+    border: 1px solid #67C6E3;
     border-radius: 20px;
     margin-top: 36px;
-    background: rgb(0, 0, 0);
+    background: #acbcc4;
     display: flex;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -109,8 +111,11 @@ bottom: 740px; */
     text-align: center;
 }
 
-.auth-inp:hover, .auth-inp:focus {
-    background: #333;
+
+.auth-inp:hover {
+    /* background: #333; */
+    background: #acbcc4;
+
 }
 
 .auth-btn {
@@ -119,7 +124,7 @@ bottom: 740px; */
     left: 701px;
     top: 376px;
     box-sizing: border-box;
-    border: 1px solid #007BFF;
+    border: 1px solid #67C6E3;
     border-radius: 20px;
     margin-top: 36px;
     background: rgb(0, 0, 0);
@@ -136,5 +141,8 @@ bottom: 740px; */
 }
 
 .auth-btn:hover {
-    background: #333;
+    /* background: #333; */
+    background: #acbcc4;
+    border-color: #67C6E3;
+
 }
