@@ -38,7 +38,7 @@ const Msg = (props) => {
 
     const handleUpdate = () => {
         // Отправьте запрос на сервер для обновления сообщения
-        fetch(`http://127.0.0.1:5000/editmsg/${Number(props.id)}`, {
+        fetch(`http://127.0.0.1:5003/editmsg/${Number(props.id)}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const Msg = (props) => {
 
     const handleDelete = () => {
         // Отправьте запрос на сервер для удаления сообщения
-        fetch(`http://127.0.0.1:5000/delmsg/${Number(props.id)}`, {
+        fetch(`http://127.0.0.1:5003/delmsg/${Number(props.id)}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

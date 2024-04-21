@@ -8,7 +8,7 @@ const Message = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      fetch('http://127.0.0.1:5000/messages')
+      fetch('http://127.0.0.1:5003/messages')
         .then(response => response.json())
         .then(data => setMessages(data))
         .catch(error => console.error(error));
