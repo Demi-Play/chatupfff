@@ -2,9 +2,9 @@
     display: flex;
     margin-bottom: 29px;
     margin-top: 29px;
-    background: rgb(0, 0, 0);
+    background: #141318;
     border-radius: 20px 0 20px 0;
-    border: 2px solid #67C6E3;
+    border: 2px solid #FF8354;
 
 }
 
@@ -19,7 +19,7 @@
     box-sizing: border-box;
     /* border: 1px solid rgb(156, 39, 176); */
     border-radius: 20px;
-    background: rgb(0, 0, 0);
+    background: #141318;
 
     /* background: rgb(93, 25, 105); */
 }

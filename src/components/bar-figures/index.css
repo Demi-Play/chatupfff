@@ -41,7 +41,7 @@
 }
 
 .left-bar-header-wrapp-menu:hover {
-    border: 1px solid #67C6E3;
+    border: 1px solid #FF8354;
     /* background: #333; */
     background: #acbcc4;
 
@@ -67,7 +67,7 @@
     /* background: #333; */
     background: #acbcc4;
 
-    border: 1px solid #67C6E3;
+    border: 1px solid #FF8354;
 }
 
 .left-bar-header-wrapp-search-img-icon {
@@ -80,10 +80,10 @@
     width: 644px;
     height: 902px;
     box-sizing: border-box;
-    border: 2px solid #67C6E3;
+    border: 2px solid #FF8354;
     border-radius: 20px 0 20px 0;
     /* overflow-y: scroll; */
-    background: rgb(0, 0, 0);
+    background: #141318;
 }
 
 .chats-bar-wrapp-scroll {

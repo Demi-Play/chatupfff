@@ -6,9 +6,9 @@
     left: 0;
     top: 0;
     box-sizing: border-box;
-    border: 2px solid #67C6E3;
+    border: 2px solid #000000;
     border-radius: 18px 0 18px 0;
-    background: rgb(0, 0, 0);
+    background: #E7FF8F;
 }
 
 .msg-wrapp {
@@ -36,7 +36,7 @@
     box-sizing: border-box;
     border-radius: 18px;
     margin-top: 36px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
