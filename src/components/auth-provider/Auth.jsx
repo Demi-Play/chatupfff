@@ -6,7 +6,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const Auth = (props) => {
-    const sign = false;
+    const sign = true;
     const [data, setData] = useState({});
     const [error, setError] = useState('');
     const [name, setName] = useState('');
@@ -19,10 +19,12 @@ const Auth = (props) => {
             const response = await axios.post('http://127.0.0.1:5003/auth', {
                 name: name,
                 password: password,
-            }, {
-                withCredentials: true, // Allow sending cookies
-                credentials: 'include', // Include credentials in the request
-            });
+            },
+                // {
+                //     withCredentials: true, // Allow sending cookies
+                //     // credentials: 'include', // Include credentials in the request
+                // }
+            );
 
             const handleSignIn = (signedIn) => {
                 props.onClick(signedIn);
@@ -32,15 +34,15 @@ const Auth = (props) => {
             };
 
             if (response.status === 200 && response.data.id) {
-                handleSignIn(!sign);
+                handleSignIn(sign);
                 console.log(response.data);
             } else {
-                handleSignIn(sign);
+                handleSignIn(!sign);
             }
         } catch (error) {
             console.error(error);
             setError('An error occurred. Please try again.');
-            props.onClick(sign);
+            props.onClick(!sign);
         }
     };
 
